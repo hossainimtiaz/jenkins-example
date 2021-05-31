@@ -17,11 +17,8 @@ pipeline {
 
     stages {
         stage ('Compile Stage') {
-
             steps {
-                withMaven() {
-                    sh 'mvn clean compile'
-                }
+                sh 'mvn clean compile'
             }
         }
     }
